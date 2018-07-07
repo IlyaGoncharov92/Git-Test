@@ -6,6 +6,8 @@ import { store } from './state/state';
 
 const t=12;
 
+
+
 ReactDOM.render(
   (<Provider store={store}>
     <Application/>
