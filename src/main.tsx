@@ -5,8 +5,8 @@ import { Application } from './components/application';
 import { store } from './state/state';
 
 ReactDOM.render(
-    (<Provider store={store}>
-        <Application/>
-    </Provider>),
-    document.getElementById('application')
+  (<Provider store={store}>
+    <Application/>
+  </Provider>),
+  document.getElementById('application')
 );

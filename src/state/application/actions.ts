@@ -3,10 +3,10 @@ import { actionFactory, ActionWithPayload } from '../common/actions';
 
 export enum ApplicationActionTypes
 {
-    Action1 = 'Action1',
-    Action2 = 'Action2',
-    Action3 = 'Action3',
-    Action4 = 'Action4',
+  Action1 = 'Action1',
+  Action2 = 'Action2',
+  Action3 = 'Action3',
+  Action4 = 'Action4',
 }
 
 export type Action1 = ActionWithPayload<ApplicationActionTypes.Action1, number>;

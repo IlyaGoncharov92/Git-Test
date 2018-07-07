@@ -3,8 +3,9 @@ import { Action } from 'redux';
 /* tslint:disable */
 export interface ActionWithPayload<T, P> extends Action<T>
 {
-    payload: P;
+  payload: P;
 }
+
 /* tslint:enable */
 
 type ExtractType<T> = T extends Action<infer A> ? A : never;
@@ -17,17 +18,17 @@ export function actionFactory<T extends ActionWithPayload<any, any>>(type: Extra
 export function actionFactory<T extends Action<any>>(type: ExtractType<T>): ActionFactory<T>;
 export function actionFactory<T extends Action<T>>(type: ExtractType<T>)
 {
-    return (payload?: any) =>
+  return (payload?: any) =>
+  {
+    if (typeof payload === 'undefined')
     {
-        if (typeof payload === 'undefined')
-        {
-            return {type: type};
-        }
-        else
-        {
-            return {type: type, payload: payload};
-        }
-    };
+      return {type: type};
+    }
+    else
+    {
+      return {type: type, payload: payload};
+    }
+  };
 }
 
 export type Fn = (...args: any[]) => any;

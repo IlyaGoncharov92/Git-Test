@@ -1,2 +1,2 @@
 //enables redux-devtools-extension
-declare const enableDevTools:boolean;
+declare const enableDevTools: boolean;
