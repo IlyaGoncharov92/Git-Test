@@ -24,3 +24,5 @@ export function composeMiddleware(input: ReturnType<typeof applyMiddleware>): Re
   console.log('test1')
   return input;
 }
+
+const t5 = 6546456;
