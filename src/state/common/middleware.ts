@@ -21,7 +21,7 @@ export function composeMiddleware(input: ReturnType<typeof applyMiddleware>): Re
   {
     return composeWithDevTools(input);
   }
-  console.log('test1123ввввввв')
+  console.log('test1')
   return input;
 }
 
