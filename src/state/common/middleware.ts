@@ -21,8 +21,11 @@ export function composeMiddleware(input: ReturnType<typeof applyMiddleware>): Re
   {
     return composeWithDevTools(input);
   }
+<<<<<<< HEAD
   console.log('test1123')
   const t = 12;
+=======
+>>>>>>> master
   console.log('test1123123')
   const tt = 124;
   return input;
