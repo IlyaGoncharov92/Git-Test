@@ -3,7 +3,7 @@
 import { applyMiddleware, StoreEnhancer } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-const masterFix1 = 1;
+const masterFix1 = 2;
 
 /* tslint:disable */
 
