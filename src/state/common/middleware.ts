@@ -22,6 +22,7 @@ export function composeMiddleware(input: ReturnType<typeof applyMiddleware>): Re
     return composeWithDevTools(input);
   }
   console.log('test1123')
+  const t = 12;
   return input;
 }
 
