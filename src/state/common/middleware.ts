@@ -26,4 +26,5 @@ export function composeMiddleware(input: ReturnType<typeof applyMiddleware>): Re
   return input;
 }
 
+const t = 12;
 const branchFix1 = 2;
