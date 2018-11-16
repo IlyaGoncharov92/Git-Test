@@ -13,7 +13,7 @@ declare module 'redux'
 {
   export type GenericStoreEnhancer<Ext= any, StateExt = any> = StoreEnhancer<Ext, StateExt>
 }
-const basd = 123;
+const basd = 123545;
 /* tslint:enable */
 
 export function composeMiddleware(input: ReturnType<typeof applyMiddleware>): ReturnType<typeof applyMiddleware>
