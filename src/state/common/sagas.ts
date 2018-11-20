@@ -6,3 +6,5 @@ export function promise<T>(arg: () => Promise<T>): CallEffectFactory<Promise<T>>
 }
 
 const t = 123;
+
+const tt = 123;
